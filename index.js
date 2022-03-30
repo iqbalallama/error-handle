@@ -1,3 +1,21 @@
+// conver kg to mon
+function kgToMon(kg){
+    if(typeof(kg) == 'number'){
+        if(kg <= 0){
+            return 'enter positive value';
+        }
+        else{
+            const mon = kg / 40 ;
+            return mon;
+        }
+    }
+    else if(typeof(kg) != 'number'){
+        return 'please enter digit';
+    }
+}
+const findMon = kgToMon(-80);
+console.log(findMon);
+
 // find departmental friend
 function findFriend(friends,searchDept){
     const find = [];
